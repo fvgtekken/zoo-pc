@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
+  background-color: rgb(1, 102, 57);
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* Globales */
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin: 0 0 2rem 0;
+}
+h1 {
+  font-size: 3.8rem;
+  color: azure;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.text-center {
+  font-size: 3rem;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.panel {
+  background-color: rgb(8, 97, 8);
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.panel:hover {
+  background-color: green;
+}
+
+.speak {
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  transition: box-shadow 0.3s ease;
+  margin: 1.2rem;
+}
+
+.speak:focus {
+  box-shadow: 0 0 5px 2px lightblue; /* Color de fondo celeste al hacer clic */
+}
+
+.buttonSpeak {
+  background-color: #0056b3; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cursor al pasar el ratón */
+}
+
+/* Estilo para el botón al pasar el ratón */
+.buttonSpeak:hover {
+  background-color: #007bff; /* Color de fondo al pasar el ratón */
+}
+
+/*****************************************************/
+
+.containerLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  color: #fff;
+  position: relative;
+  top: 41rem;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    top: 41rem;
+  }
+}
+.footer-img {
+  position: relative;
+  top: 17.5rem;
+  background-image: url('../img/bg.png'); /* Ruta de la imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  background-position: center; /* Centrar la imagen */
+  background-size: cover; /* Ajustar la imagen para cubrir completamente el contenedor */
+  min-width: 100%;
+  min-height: 200px; /* Ajustar la altura mínima para que la imagen sea visible */
+}
