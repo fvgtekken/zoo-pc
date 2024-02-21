@@ -13,7 +13,7 @@ document.querySelector('#app').innerHTML = `
    <div class="containerLogo">
          <img src="${logoMain2}" alt="logoInte" />
     <div>
-    <h1>Welcome to Zoo Pc!</h1>
+    <h1 >Welcome to Zoo Pc!</h1>
      <div class="container">
       <div class="panel">
         <img src="${panda}" alt="Panda" />

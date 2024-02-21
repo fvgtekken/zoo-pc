@@ -14,7 +14,8 @@ body {
   line-height: 2;
 }
 
-/* Globales */
+/* Globals */
+/*************************************/
 h1,
 h2,
 h3 {
@@ -42,50 +43,32 @@ img {
   display: block;
 }
 
-.panel {
-  background-color: rgb(8, 97, 8);
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease;
-}
-
-.panel:hover {
-  background-color: green;
-}
-
-.speak {
-  border: none;
-  outline: none;
-  border-radius: 0.5rem;
-  padding: 0.7rem;
-  transition: box-shadow 0.3s ease;
-  margin: 1.2rem;
-}
-
-.speak:focus {
-  box-shadow: 0 0 5px 2px lightblue; /* Color de fondo celeste al hacer clic */
-}
-
-.buttonSpeak {
-  background-color: #0056b3; /* Color de fondo */
-  color: #fff; /* Color del texto */
-  border: none; /* Sin borde */
-  border-radius: 4px; /* Bordes redondeados */
-  padding: 10px 20px; /* Espaciado interno */
-  cursor: pointer; /* Cursor al pasar el ratón */
-}
-
-/* Estilo para el botón al pasar el ratón */
-.buttonSpeak:hover {
-  background-color: #007bff; /* Color de fondo al pasar el ratón */
-}
-
+/*Logo */
 /*****************************************************/
-
 .containerLogo {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+@media (max-width: 280px) {
+  .containerLogo {
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+  }
+}
+
+/*Main title h1*/
+/******************************************************/
+@media (max-width: 280px) {
+  h1 {
+    margin-left: 1.5rem;
+  }
+}
+
+/*Main Container */
+/*****************************************************/
 
 .container {
   margin: 3rem;
@@ -97,12 +80,81 @@ img {
 
 @media (min-width: 768px) {
   .container {
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
+/*Panel*/
+/**************************************/
+.panel {
+  background-color: rgb(8, 97, 8);
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.panel:hover {
+  background-color: green;
+}
+
+/*Input Field*/
+/**************************************/
+.speak {
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  transition: box-shadow 0.3s ease;
+  margin: 1.2rem;
+}
+
+.speak:focus {
+  box-shadow: 0 0 5px 2px lightblue;
+}
+
+@media (max-width: 390px) {
+  .speak {
+    margin-left: 4.5rem;
+  }
+}
+@media (max-width: 280px) {
+  .speak {
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+}
+
+/*Buttons*/
+/*************************************/
+.buttonSpeak {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.buttonSpeak:hover {
+  background-color: #007bff;
+}
+
+@media (max-width: 390px) {
+  .buttonSpeak {
+    margin-left: 10.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .buttonSpeak {
+    margin-left: 8rem;
+  }
+}
+
+/*Footer */
+/**************************************/
 .footer {
   display: flex;
   flex-direction: column;
@@ -129,4 +181,10 @@ img {
   background-size: cover; /* Ajustar la imagen para cubrir completamente el contenedor */
   min-width: 100%;
   min-height: 200px; /* Ajustar la altura mínima para que la imagen sea visible */
+}
+
+@media (max-width: 280px) {
+  .footer-img {
+    left: 1rem;
+  }
 }

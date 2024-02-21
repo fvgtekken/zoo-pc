@@ -12,7 +12,7 @@ export const validateInput = (e) => {
   const valueInput = e.target.value;
 
   if (e.inputType === 'deleteContentBackward') {
-    console.log('Persiste backspace');
+    //console.log('Persiste backspace');
     return true;
   }
 

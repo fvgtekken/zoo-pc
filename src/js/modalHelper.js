@@ -1,7 +1,7 @@
-import panda from '../img/panda2.jpg';
-import tigger from '../img/tigger2.jpg';
-import cheetah from '../img/cheetah2.jpg';
-import lion from '../img/lion2.jpg';
+import panda from '../img/panda2.png';
+import tigger from '../img/tigger2.png';
+import cheetah from '../img/cheetah2.png';
+import lion from '../img/lion2.png';
 
 const typeImage = {
   panda,
