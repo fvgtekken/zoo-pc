@@ -92,6 +92,7 @@ img {
   background-color: rgb(8, 97, 8);
   border-radius: 0.5rem;
   transition: background-color 0.3s ease;
+  border: 1px solid rgb(8, 97, 8);
 }
 
 .panel:hover {
